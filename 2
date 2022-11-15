@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //    EX1
+        Scanner t = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int num = t.nextInt();
+        if (num > 0) {
+        System.out.println("Positive number");
+        } else if (num < 0) {
+           System.out.println("Negative number");
+        } else if (num == 0) {
+            System.out.println("Equal to zero");
+
+      //  Ex2
+       Scanner word= new Scanner(System.in);
+       System.out.println("Enter the word :");
+       String A =word.next();
+       System.out.println("Enter the letter :");
+       String B = word.next();
+       System.out.println("Is the sentence"+A+"contain phrase"+A+" "+B.contains(B));
+
+        //  Ex3
+
+         Scanner v=new Scanner(System.in);
+         System.out.println("Enter a word");
+         String text  = word.next();
+         System.out.println("Enter the letter :");
+         int Num = v.nextInt();
+         System.out.println("The character is = "+Num+text.charAt(Num));
+
+     // Ex4
+        Scanner n=new Scanner(System.in);
+        System.out.println("Enter the largest number:");
+        int num1 = n.nextInt();
+        System.out.println("Enter the middle number:");
+        int num2 = n.nextInt();
+       System.out.println("Enter the smallest number:");
+       int num3 = n.nextInt();
+       if (num1>num2&&num1>num3)
+       { System.out.println(num1+" is the largest number"); }
+        else 
+        { System.out.println("Enter the smallest number"); }
+        
+    }
+}
