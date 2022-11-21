@@ -1,0 +1,30 @@
+import java.sql.Array;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Ex.1
+        try {
+        int[] num = {1, 2, 3, 4, 5, 6, 7};
+        System.out.println(num[9]);
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+        System.out.println(e.getMessage()); }
+
+        // Ex.2
+        input();
+    }
+    public static void input() {
+        try {
+            Scanner s = new Scanner(System.in);
+            System.out.println("Enter a number :");
+            int num = s.nextInt();
+            if (num == 1 || num == 2|| num == 3){
+                throw new InputMismatchException("valid input");
+            }
+        } catch (InputMismatchException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
